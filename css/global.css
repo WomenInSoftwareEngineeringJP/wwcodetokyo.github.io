@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* 共通CSS*/
+body{
+	font-size:14px;
+	color:#000;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	}
+		
+a{
+	text-decoration:none;
+	}
+	
+li{
+	list-style:none;
+	}
+
+/*見出し*/
+
+h1{
+	text-align:center;
+	color:#00b6aa;
+	}	
+	
+h2{
+	border-bottom:1px solid #d9d9d9;
+	text-align: center;
+	width: 200px;
+	margin: 0 auto;
+	height:32px;
+	position:relative;
+	}	
+	
+h2 span{
+	display:block;
+	background:#FFF;
+	position:absolute;
+	left:20%;
+	top:50%;
+	padding:0 20px;
+	}	
+	
+/*ボタン*/	
+.button{
+	display:block;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+		}
+			
+.button_grey{
+	border-radius:3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border:1px #d9d9d9 solid;
+	color:#6e6e6e;
+	padding:5px 10px;
+	background:#f3f3f3;	
+	}
+	
+.button_grey:hover{
+	background:#E3E3E3;
+	}
+
+.button_green {
+	background-color: #00b6aa;
+	border-radius:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	font-weight:bold;
+	padding:10px 15px;
+	color: #FFF;
+	box-shadow: 0 3px 0 #009388;
+	-moz-box-shadow: 0 3px 0 #009388;
+	-webkit-box-shadow: 0 3px 0 #009388;
+	-ms-box-shadow: 0 3px 0 #009388;
+	-o-box-shadow: 0 3px 0 #009388;	
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	-moz-text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	-webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	-ms-text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	-o-text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+.button_green:hover {
+	background-color: #00E3D2;
+	box-shadow: 0 3px 0 #00b6aa;
+	-webkit-box-shadow: 0 3px 0 #00b6aa;
+	-moz-box-shadow: 0 3px 0 #00b6aa;
+	-ms-box-shadow: 0 3px 0 #00b6aa;
+	-o-box-shadow: 0 3px 0 #00b6aa;
+	color:#fff;
+}
