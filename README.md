@@ -66,4 +66,27 @@ htmlはindex.htmlに記述し、CSSはcssフォルダ直下のstyle.cssに書い
 
 ### レスポンシブデザイン
 PC以外のデバイスからWEBサイトを閲覧した時に、そのデバイスに表示が最適化されるデザインをレスポンシブデザインといいます。
-この雛形も[Simple Grid](http://thisisdallas.github.io/Simple-Grid/"Simple Grid") というCSSライブラリを読み込んでいるのでclass名を指定するだけで簡単に実現できます。(メニュー除く)
+この雛形も[Simple Grid](http://thisisdallas.github.io/Simple-Grid/"Simple Grid") というCSSライブラリを読み込んでいるのでclass名を指定するだけで簡単にレスポンシブデザインが実現できます。(メニュー除く)　  
+クラス名の指定の仕方
+
+    <div class="grid grid-pad">　<!--コンテンツを中央寄せ&段落回り込み解除-->
+	  <div class="col-1-2">ここにコンテンツ</div> <!--width:50%;-->
+      <div class="col-1-2">ここにコンテンツ</div>  <!--width:50%;-->
+    </div>
+    
+
+
+12カラム構成なので、そのうちいくつのカラムを1ブロックに使いたいかを指定します。
+たとえば4ブロックを横に並べたい場合はcol-1-4と記述します。
+詳しいサンプルはSimple Gridの[公式サイト](http://thisisdallas.github.io/Simple-Grid/"Simple Grid") を参考にしてください。   
+きちんとレスポンシブデザインになっているかどうかはブラウザサイズを縮小することで確認できます。
+
+## 参考サイト
+###  HTML
+[HTML5リファレンス](http://www.htmq.com/html5/"HTML5リファレンス") 　
+### CSS
+[CSSリファレンス](http://www.htmq.com/csskihon/001.shtml"CSSリファレンス")
+### 実践的な用例
+[HTML+CSSによるウェブページ制作例](http://www.htmq.com/csskihon/401.shtml"HTML+CSSによるウェブページ制作例")
+
+[CSSでレイアウトするなら絶対覚えておきたい配置のルール：フロートや絶対配置、z-index とかいろいろ](http://webdesignrecipes.com/css-visual-formating-model/"CSSでレイアウトするなら絶対覚えておきたい配置のルール：フロートや絶対配置、z-index とかいろいろ")
