@@ -6,22 +6,26 @@ body{
 	color:#000;
 	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	}
-		
+
 a{
 	text-decoration:none;
 	}
-	
+
 li{
 	list-style:none;
 	}
 
 /*見出し*/
 
+h1,h2{
+	font-family: 'Open Sans', sans-serif;
+}
+
 h1{
 	text-align:center;
 	color:#00b6aa;
-	}	
-	
+	}
+
 h2{
 	border-bottom:1px solid #d9d9d9;
 	text-align: center;
@@ -29,8 +33,8 @@ h2{
 	margin: 0 auto;
 	height:32px;
 	position:relative;
-	}	
-	
+	}
+
 h2 span{
 	display:block;
 	background:#FFF;
@@ -38,9 +42,9 @@ h2 span{
 	left:20%;
 	top:50%;
 	padding:0 20px;
-	}	
-	
-/*ボタン*/	
+	}
+
+/*ボタン*/
 .button{
 	display:block;
 	transition:all 0.5s;
@@ -49,7 +53,7 @@ h2 span{
 	-o-transition:all 0.5s;
 	-ms-transition:all 0.5s;
 		}
-			
+
 .button_grey{
 	border-radius:3px;
 	-moz-border-radius: 3px;
@@ -59,9 +63,9 @@ h2 span{
 	border:1px #d9d9d9 solid;
 	color:#6e6e6e;
 	padding:5px 10px;
-	background:#f3f3f3;	
+	background:#f3f3f3;
 	}
-	
+
 .button_grey:hover{
 	background:#E3E3E3;
 	}
@@ -80,7 +84,7 @@ h2 span{
 	-moz-box-shadow: 0 3px 0 #009388;
 	-webkit-box-shadow: 0 3px 0 #009388;
 	-ms-box-shadow: 0 3px 0 #009388;
-	-o-box-shadow: 0 3px 0 #009388;	
+	-o-box-shadow: 0 3px 0 #009388;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
 	-moz-text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
 	-webkit-text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
