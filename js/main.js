@@ -20,3 +20,13 @@ $.getJSON("https://api.meetup.com/2/events?&sign=true&photo-host=public&group_ur
     });
     $('#upcoming').html(eventList)});
 
+// "Past Meetups" - The width & the position of the labels on the imgs
+$('#past_meetups_list .col-1-3').each(function(){
+    var img = $('#past_meetups_list .col-1-3 img');
+    var img_width = img.width();
+    var img_height = img.height();
+    $('#past_meetups_list a span').css({
+        width: img_width,
+        top: img_height * 0.75
+    });
+});
