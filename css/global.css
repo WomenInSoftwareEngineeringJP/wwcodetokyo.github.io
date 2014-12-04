@@ -27,22 +27,20 @@ h1{
 	}
 
 h2{
-	border-bottom:1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	margin: 1.5em auto 1.5em;
 	text-align: center;
-	width: 200px;
-	margin: 0 auto;
-	height:32px;
-	position:relative;
-	}
+	padding: 0;
+	font-size: 1.5em;
+	height: 0.75em;
+	width: 280px;
+	font-weight: bold;
+}
 
 h2 span{
-	display:block;
-	background:#FFF;
-	position:absolute;
-	left:20%;
-	top:50%;
-	padding:0 20px;
-	}
+	padding: 0 1.5em;
+	background-color: #fff;
+}
 
 /*ボタン*/
 .button{
