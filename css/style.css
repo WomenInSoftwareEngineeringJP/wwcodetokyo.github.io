@@ -79,8 +79,6 @@ SNSアイコンにスタイルをあてる人はglobal.cssに書いてくださ�
 
 /* Join Us button */
 .btn_join {
-	-webkit-border-radius: 5;
-	-moz-border-radius: 5;
 	border-radius: 5px;
 	color: #fff;
 	font-size: 3em;
@@ -104,3 +102,26 @@ SNSアイコンにスタイルをあてる人はglobal.cssに書いてくださ�
 
 /*Slider
 ************************************/
+
+
+/*Button to Pagetop
+************************************/
+
+#btn_pagetop{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+#btn_pagetop a{
+	background-color: #99e1dc;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 3px;
+	text-align: center;
+	padding: 10px 15px;
+	opacity: 0.8;
+}
+#btn_pagetop a:hover{
+	background-color: #4fb7aa;
+}
