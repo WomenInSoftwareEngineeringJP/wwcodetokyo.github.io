@@ -7,9 +7,35 @@
 SNSアイコンにスタイルをあてる人はglobal.cssに書いてください。
 */
 
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
 
 /*Header
 ************************************/
+
+
+em{
+	font-style: normal;
+}
+.dark_green{
+	color: #4fb7aa;
+}
+.pink{
+	color: #e63844;
+}
+.txt_shadow{
+	text-shadow: 5px 5px 5px #ccc;
+}
 
 /*Events
 ************************************/
@@ -94,7 +120,24 @@ SNSアイコンにスタイルをあてる人はglobal.cssに書いてくださ�
 
 /*Contacts and Sponsor
 ************************************/
-
+#whoweare{
+	margin-left: 1em;
+}
+#whoweare dt{
+	float: left;
+	clear: left;
+	width: 20%;
+	margin-bottom: 10px;
+}
+#whoweare dd{
+	float: left;
+	width: 80%;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+#whoweare dd:before{
+	content: '\A0:\A0\A0\A0';
+}
 
 /*Footer
 ************************************/

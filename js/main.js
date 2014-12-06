@@ -51,3 +51,15 @@ $(function(){
         return false;
     });
 });
+
+// bxSlider
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+    auto: true,
+    controls: true,
+    mode: 'fade',
+    speed: 1000,
+    autoHover: true
+  });
+});
+
