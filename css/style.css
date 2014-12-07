@@ -8,12 +8,123 @@ SNSアイコンにスタイルをあてる人はglobal.cssに書いてくださ�
 */
 
 
+/*General
+************************************/
+section{
+	margin-bottom: 20px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+em{
+	font-style: normal;
+}
+.dark_green{
+	color: #4fb7aa;
+}
+.pink{
+	color: #e63844;
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	*zoom: 1;
+}
+
 /*Header
 ************************************/
 
+
+/*About
+************************************/
+.mission_icon{
+	text-shadow: 5px 5px 5px #ccc;
+	font-size: 10em;
+	margin-top: 30px;
+}
+
+.balloon_q{
+	position: relative;
+	display: block;
+	padding: 15px;
+	margin:65px 10% 10%;
+	min-width: 115px;
+	text-align: center;
+	background: #ddd;
+	border-radius: 15px;
+	z-index: 0;
+	border: 1px dashed #aaa;
+}
+.balloon_q:before{
+	content: "";
+	position: absolute;
+	top: -20px; left: 15px;
+	margin-right: 0;
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: #ddd;
+	border-radius: 50%;
+	z-index: -1;
+	border: 1px dashed #aaa;
+}
+.balloon_q:after{
+	content: "";
+	position: absolute;
+	top: -28px; left: 30px;
+	margin-right: 0;
+	display: block;
+	width: 8px;
+	height: 8px;
+	background: #ddd;
+	border-radius: 50%;
+	z-index: -1;
+	border: 1px dashed #aaa;
+}
+
+.balloon_a{
+	position: relative;
+	background: #ffffff;
+	border: 1px solid #4fb7aa;
+	padding: 15px;
+	margin: 40px 10% 10%;
+}
+.balloon_a:after, .balloon_a:before{
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.balloon_a:after{
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 20px;
+	margin-left: -20px;
+}
+.balloon_a:before{
+	border-color: rgba(79, 183, 170, 0);
+	border-top-color: #4fb7aa;
+	border-width: 21px;
+	margin-left: -21px;
+}
+
+
+
 /*Events
 ************************************/
-
 #upcoming{
 	margin-top:1em;
 	}
@@ -55,9 +166,63 @@ SNSアイコンにスタイルをあてる人はglobal.cssに書いてくださ�
 	}*/
 	
 
+/* Past Meetups */
+#past_meetups_list{
+	margin-bottom: 1em;
+}
+#past_meetups_list div{
+	position: relative;
+}
+#past_meetups_list a{
+	color: #fff;
+}
+#past_meetups_list a span{
+	display: block;
+	position: absolute;
+	top: 250px;
+	text-align: center;
+	padding: 20px 0;
+	background: rgba(0, 0, 0, 0.4);
+}
+#past_meetups_list .col-1-3 img{
+	width: 100%;
+}
+
+/* Join Us button */
+.btn_join {
+	border-radius: 5px;
+	color: #fff;
+	font-size: 3em;
+	background: #00b6aa;
+	padding: 20px 30px;
+	text-decoration: none;
+}
+.btn_join:hover {
+	background: #8accc8;
+	text-decoration: none;
+}
+
+
 /*Contacts and Sponsor
 ************************************/
-
+#whoweare{
+	margin-left: 1em;
+}
+#whoweare dt{
+	float: left;
+	clear: left;
+	width: 20%;
+	margin-bottom: 10px;
+}
+#whoweare dd{
+	float: left;
+	width: 80%;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+#whoweare dd:before{
+	content: '\A0:\A0\A0\A0';
+}
 
 /*Footer
 ************************************/
@@ -65,3 +230,25 @@ SNSアイコンにスタイルをあてる人はglobal.cssに書いてくださ�
 
 /*Slider
 ************************************/
+
+
+/*Button to Pagetop
+************************************/
+#btn_pagetop{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+#btn_pagetop a{
+	background-color: #99e1dc;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 3px;
+	text-align: center;
+	padding: 10px 15px;
+	opacity: 0.8;
+}
+#btn_pagetop a:hover{
+	background-color: #4fb7aa;
+}
