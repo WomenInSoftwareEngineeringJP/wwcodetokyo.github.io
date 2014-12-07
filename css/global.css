@@ -3,7 +3,7 @@
 /* 共通CSS*/
 body{
 	font-size:14px;
-	color:#000;
+	color:#4d4d4d;
 	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
@@ -22,7 +22,7 @@ li{
 /*見出し*/
 
 h1,h2{
-	font-family: 'Open Sans', sans-serif;
+	font-family: monospace, 'Open Sans', sans-serif;
 }
 
 h1{

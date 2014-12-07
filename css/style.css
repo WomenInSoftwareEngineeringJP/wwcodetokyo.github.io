@@ -7,23 +7,16 @@
 SNSアイコンにスタイルをあてる人はglobal.cssに書いてください。
 */
 
-/* clearfix */
-.cf:before,
-.cf:after {
-    content: " ";
-    display: table;
-}
-.cf:after {
-    clear: both;
-}
-.cf {
-    *zoom: 1;
-}
 
-/*Header
+/*General
 ************************************/
-
-
+section{
+	margin-bottom: 20px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
 em{
 	font-style: normal;
 }
@@ -33,13 +26,105 @@ em{
 .pink{
 	color: #e63844;
 }
-.txt_shadow{
-	text-shadow: 5px 5px 5px #ccc;
+
+/* clearfix */
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
 }
+.cf:after {
+	clear: both;
+}
+.cf {
+	*zoom: 1;
+}
+
+/*Header
+************************************/
+
+
+/*About
+************************************/
+.mission_icon{
+	text-shadow: 5px 5px 5px #ccc;
+	font-size: 10em;
+	margin-top: 30px;
+}
+
+.balloon_q{
+	position: relative;
+	display: block;
+	padding: 15px;
+	margin:65px 10% 10%;
+	min-width: 115px;
+	text-align: center;
+	background: #ddd;
+	border-radius: 15px;
+	z-index: 0;
+	border: 1px dashed #aaa;
+}
+.balloon_q:before{
+	content: "";
+	position: absolute;
+	top: -20px; left: 15px;
+	margin-right: 0;
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: #ddd;
+	border-radius: 50%;
+	z-index: -1;
+	border: 1px dashed #aaa;
+}
+.balloon_q:after{
+	content: "";
+	position: absolute;
+	top: -28px; left: 30px;
+	margin-right: 0;
+	display: block;
+	width: 8px;
+	height: 8px;
+	background: #ddd;
+	border-radius: 50%;
+	z-index: -1;
+	border: 1px dashed #aaa;
+}
+
+.balloon_a{
+	position: relative;
+	background: #ffffff;
+	border: 1px solid #4fb7aa;
+	padding: 15px;
+	margin: 40px 10% 10%;
+}
+.balloon_a:after, .balloon_a:before{
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.balloon_a:after{
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 20px;
+	margin-left: -20px;
+}
+.balloon_a:before{
+	border-color: rgba(79, 183, 170, 0);
+	border-top-color: #4fb7aa;
+	border-width: 21px;
+	margin-left: -21px;
+}
+
+
 
 /*Events
 ************************************/
-
 #upcoming{
 	margin-top:1em;
 	}
@@ -149,7 +234,6 @@ em{
 
 /*Button to Pagetop
 ************************************/
-
 #btn_pagetop{
 	position: fixed;
 	bottom: 20px;
