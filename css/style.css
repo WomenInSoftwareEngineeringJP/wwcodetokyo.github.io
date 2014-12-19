@@ -229,16 +229,23 @@ em{
 #past_meetups_list div{
 	position: relative;
 }
+#past_meetups_list div.past_pic{
+	width: 100%;
+}
 #past_meetups_list a{
 	color: #fff;
 }
 #past_meetups_list a span{
 	display: block;
 	position: absolute;
-	top: 250px;
-	text-align: center;
-	padding: 20px 0;
+	top: 60%;
+	width: 100%;
+	min-height: 6em;
+	padding: 20px;
 	background: rgba(0, 0, 0, 0.4);
+}
+#past_meetups_list a:hover span{
+	background: rgba(75, 176, 167, 0.8);
 }
 #past_meetups_list .col-1-3 img{
 	width: 100%;
