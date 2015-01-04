@@ -79,7 +79,7 @@ function meetupAPIGet(){
 				meetupAlbum(eventList);
 			})
 			.fail(function(jqxhr, textStatus, error){
-				var errorEvent="イベント情報を取得できませんでした。"
+				var errorEvent="イベント情報を取得できませんでした。";
 				$('#past_meetups_list').html(errorEvent);
 			});
 		
