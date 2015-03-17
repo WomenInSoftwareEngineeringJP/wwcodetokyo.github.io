@@ -46,6 +46,12 @@ h2 span{
 	background-color: #fff;
 }
 
+
+/* sponsors */
+.sponsors_bnr{
+	text-align: center;
+}
+
 /*ボタン*/
 .button{
 	display:block;
